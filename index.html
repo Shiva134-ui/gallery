@@ -1,0 +1,64 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <span class="add_icon" id="addAlbum">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/>
+        </svg>
+    </span>
+
+    <nav>
+        <span id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+        
+        <!-- Search input (Initially hidden) -->
+        <input type="text" id="search-input" placeholder="Search..." style="display: none;">
+        
+
+        <div class="nav-menu">
+            <button class="tab active" onclick="switchTab('photos')">Photos</button>
+            <button class="tab" onclick="switchTab('albums')">Albums</button>
+        </div>
+        <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+    </nav>
+
+<!-- --------------------------------tab 1------------------------------------- -->
+
+<div class="main" id="photos-content">
+    <div id="photo-gallery">
+        
+    </div>
+</div>
+
+
+<!-- --------------------------------tab 2------------------------------------- -->
+
+    <div class="main2" id="albums-content" style="display: none;">
+
+        <div class="myalbums">
+            <!-- <h3>My albums</h3> -->
+            <div class="line2">
+                <!-- <a href="#">
+                    <div class="box2">
+                        <img src="#">
+                    </div>
+                    <h4>Restored</h4>
+                    <span>138</span>
+                </a> -->
+            </div>
+        </div>
+
+        <div class="dust-bin">Dustbin</div>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
